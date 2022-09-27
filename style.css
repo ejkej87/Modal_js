@@ -50,7 +50,7 @@ body {
     color: var(--warning);
 }
 
-.modal .denger {
+.modal .danger {
     color: var(--denger);
 }
 
