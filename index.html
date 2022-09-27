@@ -7,10 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Modal</title>
 </head>
 
 <body>
+    <button>Show modal</button>
+    <container class="modal-container">
+        <div class="modal">
+            <p class="modal-title info">
+                <i class="modal-title-icon" data-feather="info"></i>
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia
+                itaque tempora nemo illum, repudiandae eligendi repellendus quod ipsum accusantium?</p>
+            <div class="modal-buttons">
+                <button class="modal-accept">Akceptuj</button>
+                <button class="modal-decline">Anuluj</button>
+            </div>
+            <button class="modal-close-icon"><i data-feather="x"></i></button>
+        </div>
+    </container>
 
 </body>
 

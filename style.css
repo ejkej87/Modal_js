@@ -1,0 +1,111 @@
+:root {
+    --warning: rgb(214, 162, 18);
+    --info: rgb(75, 113, 227);
+    --denger: #e7514f;
+    --succes: #37b068;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: relative;
+    width: 700px;
+    min-height: 250px;
+    padding: 30px 40px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--info);
+}
+
+.modal-title {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 10px 0;
+
+}
+
+.modal .warning {
+    color: var(--warning);
+}
+
+.modal .denger {
+    color: var(--denger);
+}
+
+.modal .success {
+    color: var(--succes);
+}
+
+.modal-title-icon {
+    margin-bottom: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.modal-description {
+    font-size: 18px;
+    line-height: 25px;
+    color: grey;
+}
+
+.modal-buttons button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 130px;
+    margin-top: 25px;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.modal-buttons button:hover {
+    opacity: 0.8;
+}
+
+.modal-accept {
+    background-color: var(--succes);
+}
+
+.modal-decline {
+    background-color: var(--denger);
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.modal-close-icon:hover {
+    color: grey;
+}
